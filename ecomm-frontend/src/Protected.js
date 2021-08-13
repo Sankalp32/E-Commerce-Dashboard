@@ -2,7 +2,7 @@ import React , { useEffect } from 'react';
 import { useHistory} from 'react-router-dom';
 
 
-const Protected = ( props) =>{
+const Protected = ( props) => {
    
     let Component = props.component
      const history = useHistory();

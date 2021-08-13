@@ -27,7 +27,9 @@ const Login = () => {
         });
         result = await result.json();
         localStorage.setItem('user',JSON.stringify(result));
+        if (!result.error){
         history.push('/add');
+        }
         
     }
     return(
